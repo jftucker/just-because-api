@@ -52,6 +52,7 @@ INSTALLED_APPS = [
 
     # Local
     'jobs.apps.JobsConfig',
+    'rewards.apps.RewardsConfig',
     'users.apps.UsersConfig',
 ]
 

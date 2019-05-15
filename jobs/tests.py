@@ -1,5 +1,7 @@
 from django.test import TestCase
-from django.contrib.auth.models import User
+from django.contrib.auth import get_user_model
+
+User = get_user_model()
 
 from .models import Job
 
@@ -37,4 +39,4 @@ class BlogTests(TestCase):
         self.assertEqual(expected_author, 'testuser1')
         self.assertEqual(expected_title, 'Test')
         self.assertEqual(expected_description, 'Content...')
-        self.assertEqual(expected_workers, '[<User: testuser1>, <User: testuser2>]')
+        self.assertEqual(expected_workers, '[<CustomUser: testuser1>, <CustomUser: testuser2>]')
