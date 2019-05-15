@@ -51,6 +51,7 @@ INSTALLED_APPS = [
     'rest_auth.registration',
 
     # Local
+    'contributors.apps.ContributorsConfig',
     'jobs.apps.JobsConfig',
     'rewards.apps.RewardsConfig',
     'users.apps.UsersConfig',
